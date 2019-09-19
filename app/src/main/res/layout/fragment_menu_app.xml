@@ -7,4 +7,65 @@
     tools:context=".MenuAppFragment"
     tools:showIn="@layout/activity_menu_app">
 
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:text="Ayuda"
+        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:text="Ajustes"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <Button
+        android:id="@+id/Inicio"
+        android:layout_width="149dp"
+        android:layout_height="53dp"
+        android:text="Inicio"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:text="Camara"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:text="Puntaje"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        tools:layout_editor_absoluteY="205dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:text="salir"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="620dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Hecho por : APM"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="626dp" />
 </android.support.constraint.ConstraintLayout>
