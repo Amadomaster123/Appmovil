@@ -8,15 +8,13 @@
     tools:showIn="@layout/activity_micro">
 
     <Button
-        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Siguiente"
-        tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="621dp" />
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="589dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_btn_speak_now"
@@ -59,7 +57,6 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_btn_speak_now"
@@ -69,7 +66,6 @@
         tools:layout_editor_absoluteY="355dp" />
 
     <EditText
-        android:id="@+id/editText3"
         android:layout_width="390dp"
         android:layout_height="56dp"
         android:ems="10"
@@ -80,11 +76,10 @@
         tools:layout_editor_absoluteY="276dp" />
 
     <Button
-        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Atrás"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="621dp" />
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="589dp" />
 
 </android.support.constraint.ConstraintLayout>

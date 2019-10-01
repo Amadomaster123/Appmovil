@@ -9,13 +9,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class MenuApp extends AppCompatActivity {
-    Button  btnsalir;
+public class prueba extends AppCompatActivity {
+   Button  sal ,button2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_app);
+        setContentView(R.layout.activity_prueba);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -27,20 +28,27 @@ public class MenuApp extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        configureNextButton();
-    }
-    private void configureNextButton(){
-        btnsalir = (Button) findViewById(R.id.Inicio);
-        btnsalir.setOnClickListener(new View.OnClickListener(){
 
+        sal=(Button) findViewById(R.id.salir);
+        sal.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(),Micro.class);
-                startActivity(intent);
-              //  startActivity(new Intent(MenuApp.this,Micro.class));
+            public void onClick(View v) {
+                finish();
             }
-
         });
+
+        button2=(Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener(){
+                @Override
+            public void  onClick(View v){
+                    Intent intent = new Intent (getApplicationContext(),Parlante.class );
+               startActivity(intent);
+
+            }
+        });
+
+
+
     }
 
 }
