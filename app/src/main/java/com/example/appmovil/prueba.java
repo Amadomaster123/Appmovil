@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class prueba extends AppCompatActivity {
-   Button  sal ,button2;
+   Button  button2;
 
 
     @Override
@@ -29,13 +29,6 @@ public class prueba extends AppCompatActivity {
             }
         });
 
-        sal=(Button) findViewById(R.id.salir);
-        sal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
 
         button2=(Button) findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener(){
