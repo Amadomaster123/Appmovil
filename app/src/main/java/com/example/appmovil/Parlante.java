@@ -18,11 +18,14 @@ public class Parlante extends AppCompatActivity {
         sal_par.setOnClickListener(new View.OnClickListener() {
 
             public void onClick  (View v) {
-                Intent intent = new Intent(getApplicationContext(), prueba.class);
+                Intent intent = new Intent(getApplicationContext(), Menuppa.class);
                 startActivity(intent);
 
             }
         });
+
+
+
 
 
 
