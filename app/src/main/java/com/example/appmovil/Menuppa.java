@@ -8,12 +8,12 @@ import android.widget.Button;
 
 public class Menuppa extends AppCompatActivity {
 
-    Button btnpar,btnsal ;
+    Button btnpar,btnsal,btningfoto,btntuto ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menuppa);
-        btnpar=(Button)findViewById(R.id.parlante);
+        btnpar = (Button) findViewById(R.id.parlante);
         btnpar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,7 +22,7 @@ public class Menuppa extends AppCompatActivity {
             }
         });
 
-        btnsal=(Button)findViewById(R.id.salirmppa);
+        btnsal = (Button) findViewById(R.id.salirmppa);
         btnsal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,5 +30,24 @@ public class Menuppa extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btningfoto = (Button) findViewById(R.id.btnfoto);
+        btningfoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Foto.class);
+                startActivity(intent);
+            }
+        });
+
+        btntuto = (Button) findViewById(R.id.Tuto);
+        btntuto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Tutorial.class);
+                startActivity(intent);
+
+            }
+        });
     }
 }
+
